@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,13 +12,19 @@ export default function Home() {
         <div className="pb-8">Hi there</div>
         <div>
           <h1>My name is Felix Fong</h1>
-          <h2>I&apos;m a software engineer and CS student at McMaster University</h2>
+          <h2>
+            I&apos;m a software engineer and CS student at McMaster University
+          </h2>
         </div>
         <div className="flex flex-col">
-          <a className="py-8" href="Felix_Fong_-_Programming_-_Resume_v17.pdf">felix-fong-resume-v17.pdf</a>
+          <div className="py-8">
+            <a href="resume.pdf">resume.pdf</a>
+          </div>
           <a href="https://github.com/fvcci">github.com/fvcci</a>
-          <a href="https://www.linkedin.com/in/felixfong58/">linkedin.com/in/felixfong58</a>
-          <a href="mailto:hello@fongfelix.com">hello@fongfelix.com</a>
+          <a href="https://www.linkedin.com/in/felixfong58/">
+            linkedin.com/in/felixfong58
+          </a>
+          <a href="mailto:hi.there@fongfelix.com">hi.there@fongfelix.com</a>
           <a></a>
         </div>
       </main>
