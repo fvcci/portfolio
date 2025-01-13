@@ -19,9 +19,9 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       </Head>
       <body className={`${jetbrainsMono.className} bg-[#FAFAFA]`}>
         <nav className="h-20 w-full"></nav>
-        <div className="px-5 sm:px-20">
+        <main className="px-5 sm:px-20">
           <Component {...pageProps} />
-        </div>
+        </main>
       </body>
     </>
   );
