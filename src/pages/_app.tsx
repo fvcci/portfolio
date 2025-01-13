@@ -1,4 +1,5 @@
 import { type AppType } from "next/app";
+import Head from "next/head";
 import { JetBrains_Mono } from "next/font/google";
 
 import "~/styles/globals.css";
@@ -10,9 +11,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className={`${jetbrainsMono.className} bg-[#FAFAFA] px-20`}>
-      <Component {...pageProps} />
-    </div>
+    <>
+      <Head>
+        <title>Felix Fong</title>
+        <meta name="description" content="Felix Fong's Porfolio" />
+        <link rel="icon" href="/icons/favicon.ico" />
+      </Head>
+      <body className={`${jetbrainsMono.className} bg-[#FAFAFA]`}>
+        <nav className="h-20 w-full"></nav>
+        <div className="px-5 sm:px-20">
+          <Component {...pageProps} />
+        </div>
+      </body>
+    </>
   );
 };
 
