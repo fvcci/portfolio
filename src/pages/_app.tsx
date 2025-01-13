@@ -10,7 +10,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <div className={`${jetbrainsMono.className} bg-[#FAFAFA]`}>
+    <div className={`${jetbrainsMono.className} bg-[#FAFAFA] px-20`}>
       <Component {...pageProps} />
     </div>
   );
