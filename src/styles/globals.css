@@ -4,7 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Brand palette. The shadcn tokens below are built from these. */
 @theme {
   --color-paper: #f6f6f5;
   --color-ink: #060606;
@@ -107,37 +106,38 @@
   --sidebar-ring: var(--color-gray);
 }
 
-/* Not in the Figma file yet: an inverted take on the light palette. */
+/* Ink background with the dark logo's #f5f5f4 for text. #7a7a7a is #737373
+   nudged lighter so secondary text keeps AA contrast on ink. */
 .dark {
   --background: var(--color-ink);
-  --foreground: var(--color-paper);
+  --foreground: #f5f5f4;
   --card: #1a1a1a;
-  --card-foreground: var(--color-paper);
+  --card-foreground: #f5f5f4;
   --popover: #1a1a1a;
-  --popover-foreground: var(--color-paper);
-  --primary: var(--color-paper);
+  --popover-foreground: #f5f5f4;
+  --primary: #f5f5f4;
   --primary-foreground: var(--color-ink);
   --secondary: #1a1a1a;
-  --secondary-foreground: var(--color-paper);
+  --secondary-foreground: #f5f5f4;
   --muted: #1a1a1a;
-  --muted-foreground: #8f8f8f;
+  --muted-foreground: #7a7a7a;
   --accent: #1a1a1a;
-  --accent-foreground: var(--color-paper);
+  --accent-foreground: #f5f5f4;
   --destructive: var(--color-red);
   --border: #2e2e2d;
   --input: #2e2e2d;
-  --ring: #8f8f8f;
+  --ring: #7a7a7a;
   --chart-1: var(--color-red);
-  --chart-2: var(--color-paper);
-  --chart-3: #8f8f8f;
+  --chart-2: #f5f5f4;
+  --chart-3: #7a7a7a;
   --chart-4: #4a4948;
   --chart-5: #2e2e2d;
   --sidebar: var(--color-ink);
-  --sidebar-foreground: var(--color-paper);
-  --sidebar-primary: var(--color-paper);
+  --sidebar-foreground: #f5f5f4;
+  --sidebar-primary: #f5f5f4;
   --sidebar-primary-foreground: var(--color-ink);
   --sidebar-accent: #1a1a1a;
-  --sidebar-accent-foreground: var(--color-paper);
+  --sidebar-accent-foreground: #f5f5f4;
   --sidebar-border: #2e2e2d;
-  --sidebar-ring: #8f8f8f;
+  --sidebar-ring: #7a7a7a;
 }
