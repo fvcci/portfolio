@@ -11,7 +11,7 @@ const links = [
 export default function Home() {
   return (
     <>
-      <h1 className="pb-6">Felix Fong</h1>
+      <h1 className="font-pixel pb-6 text-5xl">Felix Fong</h1>
       <ul className="flex flex-col space-y-2">
         {links.map(({ label, href }) => (
           <li key={label}>

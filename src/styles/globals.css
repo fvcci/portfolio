@@ -1,12 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f6f5;
+  --color-ink: #060606;
+  --color-gray: #737373;
+  --color-rule: #c3c1be;
+  --color-red: #fc3737;
+}
+
+/* next/font sets these variables on the app wrapper, so inline them into the
+   utilities instead of resolving them at :root. */
+@theme inline {
+  --font-pixel: var(--font-geist-pixel-circle);
+  --font-mono: var(--font-courier-prime), ui-monospace, monospace;
+  --font-sans:
+    var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+}
 
 @layer base {
-  h1 {
-    @apply text-3xl;
-  }
-  h2 {
-    @apply text-lg;
+  body {
+    @apply bg-paper text-ink;
   }
 }
