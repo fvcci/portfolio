@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-paper: #f6f6f5;
+  --color-paper: #f5f5f4;
   --color-ink: #111113;
   --color-gray: #737373;
   --color-rule: #c3c1be;
@@ -13,7 +13,6 @@
   --color-stone: #e4e3e0;
 
   /* Dark theme counterparts. */
-  --color-chalk: #f5f5f4;
   --color-ash: #7f7f82;
   --color-coal: #202024;
   --color-slate: #333336;
@@ -112,38 +111,38 @@
   --sidebar-ring: var(--color-gray);
 }
 
-/* Ink background with chalk text (the dark logo's colour). Ash is gray nudged
-   lighter so secondary text keeps AA contrast on ink. */
+/* Ink background with paper text, the inverse of the light theme. Ash is
+   gray nudged lighter so secondary text keeps AA contrast on ink. */
 .dark {
   --background: var(--color-ink);
-  --foreground: var(--color-chalk);
+  --foreground: var(--color-paper);
   --card: var(--color-coal);
-  --card-foreground: var(--color-chalk);
+  --card-foreground: var(--color-paper);
   --popover: var(--color-coal);
-  --popover-foreground: var(--color-chalk);
-  --primary: var(--color-chalk);
+  --popover-foreground: var(--color-paper);
+  --primary: var(--color-paper);
   --primary-foreground: var(--color-ink);
   --secondary: var(--color-coal);
-  --secondary-foreground: var(--color-chalk);
+  --secondary-foreground: var(--color-paper);
   --muted: var(--color-coal);
   --muted-foreground: var(--color-ash);
   --accent: var(--color-coal);
-  --accent-foreground: var(--color-chalk);
+  --accent-foreground: var(--color-paper);
   --destructive: var(--color-red);
   --border: var(--color-slate);
   --input: var(--color-slate);
   --ring: var(--color-ash);
   --chart-1: var(--color-red);
-  --chart-2: var(--color-chalk);
+  --chart-2: var(--color-paper);
   --chart-3: var(--color-ash);
   --chart-4: var(--color-slate);
   --chart-5: var(--color-coal);
   --sidebar: var(--color-ink);
-  --sidebar-foreground: var(--color-chalk);
-  --sidebar-primary: var(--color-chalk);
+  --sidebar-foreground: var(--color-paper);
+  --sidebar-primary: var(--color-paper);
   --sidebar-primary-foreground: var(--color-ink);
   --sidebar-accent: var(--color-coal);
-  --sidebar-accent-foreground: var(--color-chalk);
+  --sidebar-accent-foreground: var(--color-paper);
   --sidebar-border: var(--color-slate);
   --sidebar-ring: var(--color-ash);
 }
