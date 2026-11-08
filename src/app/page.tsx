@@ -1,25 +1,34 @@
-const links = [
-  {
-    label: "resume",
-    href: "https://github.com/fvcci/resumes/blob/main/resumes/resume.pdf",
-  },
-  { label: "github", href: "https://github.com/fvcci" },
-  { label: "linkedin", href: "https://www.linkedin.com/in/felixfong58/" },
-  { label: "email", href: "mailto:hi.there@fongfelix.com" },
-];
-
 export default function Home() {
   return (
     <>
       <h1 className="font-pixel pb-6 text-5xl">Felix Fong</h1>
       <ul className="flex flex-col space-y-2">
-        {links.map(({ label, href }) => (
-          <li key={label}>
-            <a className="underline" href={href}>
-              {label}
-            </a>
-          </li>
-        ))}
+        <li>
+          <a
+            className="underline"
+            href="https://github.com/fvcci/resumes/blob/main/resumes/resume.pdf"
+          >
+            resume
+          </a>
+        </li>
+        <li>
+          <a className="underline" href="https://github.com/fvcci">
+            github
+          </a>
+        </li>
+        <li>
+          <a
+            className="underline"
+            href="https://www.linkedin.com/in/felixfong58/"
+          >
+            linkedin
+          </a>
+        </li>
+        <li>
+          <a className="underline" href="mailto:hi.there@fongfelix.com">
+            email
+          </a>
+        </li>
       </ul>
     </>
   );
