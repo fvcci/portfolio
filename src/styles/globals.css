@@ -6,7 +6,7 @@
 
 @theme {
   --color-paper: #f6f6f5;
-  --color-ink: #060606;
+  --color-ink: #111113;
   --color-gray: #737373;
   --color-rule: #c3c1be;
   --color-red: #fc3737;
@@ -14,9 +14,9 @@
 
   /* Dark theme counterparts. */
   --color-chalk: #f5f5f4;
-  --color-ash: #7a7a7a;
-  --color-coal: #1a1a1a;
-  --color-slate: #2e2e2d;
+  --color-ash: #7f7f82;
+  --color-coal: #202024;
+  --color-slate: #333336;
 }
 
 @theme inline {

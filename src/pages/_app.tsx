@@ -31,7 +31,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <meta name="description" content="Felix Fong's Portfolio" />
         <link
           rel="icon"
-          href="/logo.svg"
+          href="/logo-light.svg"
           type="image/svg+xml"
           media="(prefers-color-scheme: light)"
         />
