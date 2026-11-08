@@ -218,9 +218,6 @@ importers:
       oxlint:
         specifier: ^1.92.0
         version: 1.92.0
-      postcss:
-        specifier: ^8.5.32
-        version: 8.5.32
       tailwindcss:
         specifier: ^4.3.5
         version: 4.3.5
