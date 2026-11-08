@@ -29,7 +29,18 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Head>
         <title>Felix Fong</title>
         <meta name="description" content="Felix Fong's Portfolio" />
-        <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+        <link
+          rel="icon"
+          href="/logo.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          rel="icon"
+          href="/logo-dark.svg"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: dark)"
+        />
       </Head>
       <main className="min-h-screen px-5 py-20 sm:px-20">
         <Component {...pageProps} />
