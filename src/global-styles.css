@@ -10,6 +10,7 @@
   --color-gray: #737373;
   --color-rule: #c3c1be;
   --color-red: #fc3737;
+  --color-blue: #007cf8;
   --color-stone: #e4e3e0;
 
   /* Dark theme counterparts. */
@@ -132,7 +133,7 @@
   --border: var(--color-slate);
   --input: var(--color-slate);
   --ring: var(--color-ash);
-  --chart-1: var(--color-red);
+  --chart-1: var(--color-blue);
   --chart-2: var(--color-paper);
   --chart-3: var(--color-ash);
   --chart-4: var(--color-slate);
