@@ -2,7 +2,7 @@ import { GeistPixelCircle } from "geist/font/pixel/circle";
 import type { Metadata } from "next";
 import { Courier_Prime, Instrument_Sans } from "next/font/google";
 
-import "~/styles/globals.css";
+import "~/global-styles.css";
 
 const courierPrime = Courier_Prime({
   subsets: ["latin"],
