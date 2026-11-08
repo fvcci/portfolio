@@ -11,6 +11,12 @@
   --color-rule: #c3c1be;
   --color-red: #fc3737;
   --color-stone: #e4e3e0;
+
+  /* Dark theme counterparts. */
+  --color-chalk: #f5f5f4;
+  --color-ash: #7a7a7a;
+  --color-coal: #1a1a1a;
+  --color-slate: #2e2e2d;
 }
 
 @theme inline {
@@ -106,38 +112,38 @@
   --sidebar-ring: var(--color-gray);
 }
 
-/* Ink background with the dark logo's #f5f5f4 for text. #7a7a7a is #737373
-   nudged lighter so secondary text keeps AA contrast on ink. */
+/* Ink background with chalk text (the dark logo's colour). Ash is gray nudged
+   lighter so secondary text keeps AA contrast on ink. */
 .dark {
   --background: var(--color-ink);
-  --foreground: #f5f5f4;
-  --card: #1a1a1a;
-  --card-foreground: #f5f5f4;
-  --popover: #1a1a1a;
-  --popover-foreground: #f5f5f4;
-  --primary: #f5f5f4;
+  --foreground: var(--color-chalk);
+  --card: var(--color-coal);
+  --card-foreground: var(--color-chalk);
+  --popover: var(--color-coal);
+  --popover-foreground: var(--color-chalk);
+  --primary: var(--color-chalk);
   --primary-foreground: var(--color-ink);
-  --secondary: #1a1a1a;
-  --secondary-foreground: #f5f5f4;
-  --muted: #1a1a1a;
-  --muted-foreground: #7a7a7a;
-  --accent: #1a1a1a;
-  --accent-foreground: #f5f5f4;
+  --secondary: var(--color-coal);
+  --secondary-foreground: var(--color-chalk);
+  --muted: var(--color-coal);
+  --muted-foreground: var(--color-ash);
+  --accent: var(--color-coal);
+  --accent-foreground: var(--color-chalk);
   --destructive: var(--color-red);
-  --border: #2e2e2d;
-  --input: #2e2e2d;
-  --ring: #7a7a7a;
+  --border: var(--color-slate);
+  --input: var(--color-slate);
+  --ring: var(--color-ash);
   --chart-1: var(--color-red);
-  --chart-2: #f5f5f4;
-  --chart-3: #7a7a7a;
-  --chart-4: #4a4948;
-  --chart-5: #2e2e2d;
+  --chart-2: var(--color-chalk);
+  --chart-3: var(--color-ash);
+  --chart-4: var(--color-slate);
+  --chart-5: var(--color-coal);
   --sidebar: var(--color-ink);
-  --sidebar-foreground: #f5f5f4;
-  --sidebar-primary: #f5f5f4;
+  --sidebar-foreground: var(--color-chalk);
+  --sidebar-primary: var(--color-chalk);
   --sidebar-primary-foreground: var(--color-ink);
-  --sidebar-accent: #1a1a1a;
-  --sidebar-accent-foreground: #f5f5f4;
-  --sidebar-border: #2e2e2d;
-  --sidebar-ring: #7a7a7a;
+  --sidebar-accent: var(--color-coal);
+  --sidebar-accent-foreground: var(--color-chalk);
+  --sidebar-border: var(--color-slate);
+  --sidebar-ring: var(--color-ash);
 }
