@@ -34,8 +34,5 @@
     "tailwindcss": "^4.3.5",
     "typescript": "^7.0.2"
   },
-  "ct3aMetadata": {
-    "initVersion": "7.37.0"
-  },
   "packageManager": "pnpm@12.18.0"
 }
