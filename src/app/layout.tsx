@@ -19,18 +19,24 @@ export const metadata: Metadata = {
   title: "Felix Fong",
   description: "Felix Fong's Portfolio",
   icons: {
+    // When several icons fit, browsers use the last one, so the themed PNGs
+    // win over the .ico fallback.
     icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
       {
-        url: "/logo-light.svg",
-        type: "image/svg+xml",
+        url: "/favicon-32-light.png",
+        type: "image/png",
+        sizes: "32x32",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/logo-dark.svg",
-        type: "image/svg+xml",
+        url: "/favicon-32-dark.png",
+        type: "image/png",
+        sizes: "32x32",
         media: "(prefers-color-scheme: dark)",
       },
     ],
+    apple: "/apple-touch-icon.png",
   },
 };
 
