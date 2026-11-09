@@ -5,6 +5,15 @@ import { useSyncExternalStore } from "react";
 
 const themes = ["light", "dark", "system"] as const;
 
+// Hovering an option previews the highlight colour it would have once picked:
+// red for light, blue for dark, and whichever the OS currently prefers for
+// system.
+const hoverColour = {
+  light: "hover:text-red",
+  dark: "hover:text-blue",
+  system: "hover:text-red os-dark:hover:text-blue",
+} satisfies Record<(typeof themes)[number], string>;
+
 const subscribe = () => () => {};
 
 export function ThemeToggle() {
@@ -30,7 +39,7 @@ export function ThemeToggle() {
             className={
               active
                 ? "text-brand"
-                : "text-muted-foreground hover:text-foreground transition-colors"
+                : `text-muted-foreground transition-colors ${hoverColour[t]}`
             }
           >
             {t}

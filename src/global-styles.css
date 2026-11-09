@@ -3,6 +3,8 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+/* The visitor's OS setting, independent of the site's theme class. */
+@custom-variant os-dark (@media (prefers-color-scheme: dark));
 
 @theme {
   --color-paper: #f6f6f5;
