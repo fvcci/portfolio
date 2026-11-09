@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Courier_Prime, Instrument_Sans } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 
+import { ThemeFavicon } from "~/components/theme-favicon";
 import "~/global-styles.css";
 
 const courierPrime = Courier_Prime({
@@ -19,24 +20,9 @@ const instrumentSans = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Felix Fong",
   description: "Felix Fong's Portfolio",
+  // The tab icon is rendered by <ThemeFavicon /> so it can follow the site's
+  // theme. Browsers fall back to /favicon.ico until it loads.
   icons: {
-    // When several icons fit, browsers use the last one, so the themed PNGs
-    // win over the .ico fallback.
-    icon: [
-      { url: "/favicon.ico", sizes: "32x32" },
-      {
-        url: "/favicon-32-light.png",
-        type: "image/png",
-        sizes: "32x32",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/favicon-32-dark.png",
-        type: "image/png",
-        sizes: "32x32",
-        media: "(prefers-color-scheme: dark)",
-      },
-    ],
     apple: "/apple-touch-icon.png",
   },
 };
@@ -53,6 +39,7 @@ export default function RootLayout({
     >
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeFavicon />
           <main>{children}</main>
         </ThemeProvider>
       </body>
