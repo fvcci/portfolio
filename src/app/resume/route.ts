@@ -1,9 +1,11 @@
-// Fetched once at build time and served as a static file.
+// Served as a static file and refreshed from GitHub at most once an hour, so a
+// new resume pushed to fvcci/resumes shows up without a redeploy.
 export const dynamic = "force-static";
+export const revalidate = 3600;
 
-// Pinned to a commit in fvcci/resumes. Bump the hash to publish a new resume.
+// Tracks the latest resume on main.
 const RESUME_URL =
-  "https://raw.githubusercontent.com/fvcci/resumes/371ad2031df85dc214471ab1e5c30d6a86d03043/resumes/resume.pdf";
+  "https://raw.githubusercontent.com/fvcci/resumes/main/resumes/resume.pdf";
 
 export async function GET() {
   const res = await fetch(RESUME_URL);
