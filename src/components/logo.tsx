@@ -1,6 +1,7 @@
-// Drawn in theme colours so it matches public/logo-light.svg and
-// public/logo-dark.svg without swapping files. The viewBox crops the empty
-// space above the shape in those 26x26 files so it centres with the header.
+// The source of truth for the logo, drawn in theme colours so one component
+// covers light and dark. The favicons in public/ are rendered from this shape.
+// The original artwork is 26x26; the viewBox crops the empty space above the
+// shape so it centres with the header.
 export function Logo({ className }: { className?: string }) {
   return (
     <svg
