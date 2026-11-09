@@ -44,7 +44,7 @@ export default function Home() {
           <li>
             <a
               className={linkClass}
-              href="https://github.com/fvcci/resumes/blob/main/resumes/resume.pdf"
+              href="https://raw.githubusercontent.com/fvcci/resumes/371ad2031df85dc214471ab1e5c30d6a86d03043/resumes/resume.pdf"
             >
               resume
             </a>
