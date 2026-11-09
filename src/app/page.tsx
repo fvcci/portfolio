@@ -42,10 +42,9 @@ export default function Home() {
         </ul>
         <ul className="flex gap-6">
           <li>
-            <a
-              className={linkClass}
-              href="https://raw.githubusercontent.com/fvcci/resumes/371ad2031df85dc214471ab1e5c30d6a86d03043/resumes/resume.pdf"
-            >
+            {/* /resume serves a PDF, not a page, so <Link> doesn't apply. */}
+            {/* oxlint-disable-next-line nextjs/no-html-link-for-pages */}
+            <a className={linkClass} href="/resume">
               resume
             </a>
           </li>
