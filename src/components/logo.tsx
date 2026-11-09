@@ -1,21 +1,22 @@
 // Drawn in theme colours so it matches public/logo-light.svg and
-// public/logo-dark.svg without swapping files.
+// public/logo-dark.svg without swapping files. The viewBox crops the empty
+// space above the shape in those 26x26 files so it centres with the header.
 export function Logo({ className }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 29 25"
+      viewBox="0 4.24264 25.4558 21.2132"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
       aria-hidden="true"
     >
       <path
-        d="M14.5 24.1667L0 9.66667L9.66667 0L11.2778 1.61111L3.22222 9.66667L8.86111 15.3056L12.8889 11.2778L10.4722 8.86111L12.0833 7.25L14.5 9.66667L16.9167 7.25L18.5278 8.86111L16.1111 11.2778L20.1389 15.3056L25.7778 9.66667L17.7222 1.61111L19.3333 0L29 9.66667L14.5 24.1667Z"
-        className="fill-foreground"
+        d="M12.7287 12.7286L14.85 10.6073L16.2642 12.0215L14.1429 14.1428L17.6784 17.6783L12.7287 22.6281L7.77891 17.6783L11.3144 14.1428L9.19313 12.0215L10.6073 10.6073L12.7287 12.7286Z"
+        className="fill-brand"
       />
       <path
-        d="M14.5 12.8889L18.5278 16.9167L14.5 20.9444L10.4722 16.9167L14.5 12.8889Z"
-        className="fill-brand"
+        d="M9.89949 5.65685L2.82843 12.7279L12.7279 22.6274L22.6274 12.7279L15.5563 5.65685L16.9706 4.24264L25.4558 12.7279L12.7279 25.4558L0 12.7279L8.48528 4.24264L9.89949 5.65685Z"
+        className="fill-foreground"
       />
     </svg>
   );
