@@ -1,6 +1,7 @@
 import { GeistPixelCircle } from "geist/font/pixel/circle";
 import type { Metadata } from "next";
 import { Courier_Prime, Instrument_Sans } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 
 import "~/global-styles.css";
 
@@ -44,12 +45,16 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
+    // next-themes sets the theme class on <html> before React hydrates.
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${GeistPixelCircle.variable} ${courierPrime.variable} ${instrumentSans.variable}`}
     >
       <body>
-        <main className="min-h-screen px-5 py-20 sm:px-20">{children}</main>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   );
